@@ -1,6 +1,6 @@
 const siteConfig = {
   businessName: "G.O.A.T Greatest of All Tint",
-  instagram: "https://www.instagram.com/GreatestOfAllTint/",
+  instagram: "https://www.instagram.com/GreatestofAllTint/",
   quoteEmail: "Jacobsweet33@gmail.com",
   quotePhone: "775-300-5764"
 };
@@ -10,6 +10,8 @@ const quoteForm = document.querySelector("#quoteForm");
 const formNote = document.querySelector("#formNote");
 const emailLink = document.querySelector("#emailLink");
 const phoneLink = document.querySelector("#phoneLink");
+const instagramLinks = document.querySelectorAll("[data-instagram-link]");
+const instagramHandleLinks = document.querySelectorAll("[data-instagram-handle]");
 
 function phoneHref(phone) {
   return `tel:${phone.replace(/[^\d+]/g, "")}`;
@@ -28,6 +30,11 @@ function buildQuoteMessage(formData) {
   ].join("\n");
 }
 
+function instagramHandle(url) {
+  const path = new URL(url).pathname.replaceAll("/", "");
+  return `@${path}`;
+}
+
 navToggle?.addEventListener("click", () => {
   const isOpen = document.body.classList.toggle("nav-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -44,6 +51,14 @@ emailLink.href = `mailto:${siteConfig.quoteEmail}?subject=${encodeURIComponent("
 phoneLink.href = phoneHref(siteConfig.quotePhone);
 phoneLink.textContent = `Call or text ${siteConfig.quotePhone}`;
 emailLink.textContent = siteConfig.quoteEmail;
+
+instagramLinks.forEach((link) => {
+  link.href = siteConfig.instagram;
+});
+
+instagramHandleLinks.forEach((link) => {
+  link.textContent = instagramHandle(siteConfig.instagram);
+});
 
 quoteForm?.addEventListener("submit", (event) => {
   event.preventDefault();
