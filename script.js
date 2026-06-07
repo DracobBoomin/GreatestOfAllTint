@@ -1,8 +1,8 @@
 const siteConfig = {
   businessName: "G.O.A.T Greatest of All Tint",
-  instagram: "https://www.instagram.com/Greatesofalltint/",
-  quoteEmail: "quotes@example.com",
-  quotePhone: "555-555-5555"
+  instagram: "https://www.instagram.com/Greatestofalltint/",
+  quoteEmail: "Jacobsweet33@gmail.com",
+  quotePhone: "775-300-5764"
 };
 
 const navToggle = document.querySelector(".nav-toggle");
