@@ -18,7 +18,7 @@ The quote form opens the visitor's email app with the message filled in. For a s
 The site links to:
 
 ```text
-https://www.instagram.com/Greatesofalltint/
+https://www.instagram.com/greatestofalltint/
 ```
 
 To show real work directly on the page for free, save a few approved customer photos into `assets/`, then replace the gallery placeholder blocks in `index.html` with image tags.
