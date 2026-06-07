@@ -7,8 +7,8 @@ This is a free static website. You can host it on GitHub Pages, Netlify, Cloudfl
 Open `script.js` and change:
 
 ```js
-quoteEmail: "quotes@example.com",
-quotePhone: "555-555-5555"
+quoteEmail: "Jacobsweet33@gmail.com",
+quotePhone: "775-300-5764"
 ```
 
 The quote form opens the visitor's email app with the message filled in. For a stronger booking setup later, connect the form to a free form service like Formspree, Basin, Netlify Forms, or a Google Form.
