@@ -7,8 +7,8 @@ This is a free static website. You can host it on GitHub Pages, Netlify, Cloudfl
 Open `script.js` and change:
 
 ```js
-quoteEmail: "Jacobsweet33@gmail.com",
-quotePhone: "775-300-5764"
+quoteEmail: "quotes@example.com",
+quotePhone: "555-555-5555"
 ```
 
 The quote form opens the visitor's email app with the message filled in. For a stronger booking setup later, connect the form to a free form service like Formspree, Basin, Netlify Forms, or a Google Form.
@@ -18,7 +18,7 @@ The quote form opens the visitor's email app with the message filled in. For a s
 The site links to:
 
 ```text
-https://www.instagram.com/greatestofalltint/
+https://www.instagram.com/GreatestofAllTint/
 ```
 
 To show real work directly on the page for free, save a few approved customer photos into `assets/`, then replace the gallery placeholder blocks in `index.html` with image tags.
